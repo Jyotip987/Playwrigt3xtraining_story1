@@ -12,3 +12,15 @@ const qa_api_url = "https://qa.vwo.com/#login";
 
 let abc = "anil";
 console.log(abc);
+
+let g_x = 10;
+
+function outer(){
+    let x = 10;
+    function inner(){
+        let y = 20;
+        console.log(x)
+    }
+    inner();
+    console.log(y)
+}
