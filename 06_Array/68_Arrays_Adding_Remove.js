@@ -20,13 +20,14 @@ console.log(arr);
 arr.shift();
 console.log(arr);
 
-// [ 1, 2, 3, 5, 6 ]
+// [ 1, 2, 3, 5, 6,7,8,9,10 ]
+const arry = [ 1, 2, 3,4, 5, 6,7,8,9,10]
+console.log("-----------")
+arry.splice(2, 0,199,1900);
+console.log(arry);
 
-arr.splice(2, 1);
-console.log(arr);
+arry.splice(3, 0, 99,900);
+console.log(arry);
 
-arr.splice(2, 0, 99);
-console.log(arr);
-
-arr.splice(1, 2, 10, 20);
-console.log(arr);
+arry.splice(1, 2, 10, 20);
+console.log(arry);
