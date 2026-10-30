@@ -23,7 +23,7 @@ test('Verify the Webtable Example 1', async ({ page }) => {
          const dynamicPath = `${firstPart}${i}${secondPart}${j}${thirdPart}`;
          // console.log(dynamicPath);
          const data = await page.locator(dynamicPath).innerText();
-         // console.log(data);
+          console.log(data);
 
           if (data.includes('Helen Bennett')) {
              const countryPath = `${dynamicPath}/following-sibling::td`; 

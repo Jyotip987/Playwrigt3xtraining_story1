@@ -6,7 +6,7 @@ test('Verify the TestCase', async ({ page }) => {
    // await page.locator('//td[text()="Rohan.Mehta"]/preceding-sibling::td/input').click();
 
 
-   await page.locator("tr:has(td:text('Rohan.Mehta'))")
+   await page.locator("tr:has(td strong:text-is('Aarav Sharma'))")
    .locator('input')
    .first()
    .click();

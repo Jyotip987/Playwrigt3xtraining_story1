@@ -5,6 +5,7 @@ test('Verify the TestCase', async ({ page }) => {
 
    let name: string = 'Luca Greco';
    let row;
+   
    while (true) {
       row = page.locator('#employees-tbody tr').filter({ hasText: name });
       if (await row.count()) {

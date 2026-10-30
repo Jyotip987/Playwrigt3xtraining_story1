@@ -22,7 +22,7 @@ test('full regression report', async () => {
 });
 
 test('mobile layout', async ({ page, browserName }) => {
-  test.fixme(browserName === 'webkit', 'Safari renders menu wrong');
+  test.fixme(browserName === 'chromium', "failing at edge");
   
   await page.goto("https://sdet.live");
     

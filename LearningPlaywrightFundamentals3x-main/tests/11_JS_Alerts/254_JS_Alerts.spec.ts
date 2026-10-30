@@ -14,6 +14,7 @@ test.describe('Javascript Alerts', () => {
         page.once('dialog', async dialog => {
             console.log('Alert type:', dialog.type());
             console.log('Alert message:', dialog.message());
+            expect(dialog.type()).toBe('alert')
             expect(dialog.message()).toBe('I am a JS Alert');
             await dialog.accept();
         });

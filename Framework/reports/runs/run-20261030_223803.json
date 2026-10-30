@@ -1,0 +1,6 @@
+{
+  "runId": "20261030_223803",
+  "tests": {
+    "chromium › e2e\\e2e-checkout.spec.ts › @P0 @Regression E2E @Checkout Checkout Feature › should complete checkout successfully": "failed"
+  }
+}
