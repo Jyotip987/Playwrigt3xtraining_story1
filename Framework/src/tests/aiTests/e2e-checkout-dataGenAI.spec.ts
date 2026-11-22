@@ -17,7 +17,7 @@
 import { test, expect } from '@fixtures/test-base';
 import { credentials } from '@config/credentials';
 import { createLogger } from '@utils/logger';
-import { AIDataGenerator } from '@ai/AIDataGenerator';
+import { AIDataGenerator } from '@utils/AIDataGenerator';
 import { visualStep } from '@utils/visualSteps';
 
 // First product card on the TTACart inventory page.

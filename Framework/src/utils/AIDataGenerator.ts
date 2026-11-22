@@ -19,12 +19,12 @@
  */
 
 import 'dotenv/config';
-import { CheckoutCustomer, DataGenerator } from '../utils/DataGenerator';
-import { askJSON } from './LLMGateway';
+import { CheckoutCustomer, DataGenerator } from './DataGenerator';
+import { askJSON } from '../ai/LLMGateway';
 import {
     CHECKOUT_CUSTOMER_SYSTEM,
     checkoutCustomerPrompt,
-} from './prompts/checkoutCustomer.prompt';
+} from '../ai/prompts/checkoutCustomer.prompt';
 
 export class AIDataGenerator {
     /**
