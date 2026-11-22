@@ -1,0 +1,9 @@
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-10-30 22:38:06
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-10-30 22:38:06
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-10-30 22:38:07

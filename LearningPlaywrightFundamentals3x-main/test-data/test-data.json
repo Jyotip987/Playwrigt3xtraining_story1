@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "email": "alice.johnson@example.com",
+      "age": 28,
+      "role": "admin",
+      "isActive": true,
+      "createdAt": "2024-01-15T08:30:00Z"
+    },
+    {
+      "id": 2,
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "email": "bob.smith@example.com",
+      "age": 35,
+      "role": "user",
+      "isActive": true,
+      "createdAt": "2024-03-22T14:45:00Z"
+    },
+    {
+      "id": 3,
+      "firstName": "Carol",
+      "lastName": "Williams",
+      "email": "carol.williams@example.com",
+      "age": 42,
+      "role": "moderator",
+      "isActive": false,
+      "createdAt": "2023-11-05T11:00:00Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Wireless Keyboard",
+      "category": "Electronics",
+      "price": 49.99,
+      "stock": 150,
+      "rating": 4.5,
+      "tags": ["keyboard", "wireless", "peripheral"]
+    },
+    {
+      "id": 102,
+      "name": "Ergonomic Mouse",
+      "category": "Electronics",
+      "price": 34.99,
+      "stock": 80,
+      "rating": 4.2,
+      "tags": ["mouse", "ergonomic", "peripheral"]
+    },
+    {
+      "id": 103,
+      "name": "USB-C Hub",
+      "category": "Accessories",
+      "price": 29.99,
+      "stock": 200,
+      "rating": 4.7,
+      "tags": ["usb", "hub", "adapter"]
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "ORD-2024-001",
+      "userId": 1,
+      "status": "delivered",
+      "items": [
+        { "productId": 101, "quantity": 1, "unitPrice": 49.99 },
+        { "productId": 103, "quantity": 2, "unitPrice": 29.99 }
+      ],
+      "totalAmount": 109.97,
+      "shippingAddress": {
+        "street": "123 Main St",
+        "city": "New York",
+        "state": "NY",
+        "zip": "10001",
+        "country": "USA"
+      },
+      "placedAt": "2024-06-10T09:15:00Z"
+    },
+    {
+      "orderId": "ORD-2024-002",
+      "userId": 2,
+      "status": "pending",
+      "items": [
+        { "productId": 102, "quantity": 1, "unitPrice": 34.99 }
+      ],
+      "totalAmount": 34.99,
+      "shippingAddress": {
+        "street": "456 Oak Ave",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90001",
+        "country": "USA"
+      },
+      "placedAt": "2024-10-25T16:30:00Z"
+    }
+  ],
+  "settings": {
+    "appName": "Playwright Test App",
+    "version": "3.0.1",
+    "environment": "staging",
+    "features": {
+      "darkMode": true,
+      "notifications": true,
+      "analytics": false
+    },
+    "pagination": {
+      "defaultPageSize": 10,
+      "maxPageSize": 100
+    }
+  }
+}
+
