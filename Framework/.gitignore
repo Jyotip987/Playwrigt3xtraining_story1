@@ -12,8 +12,8 @@ node_modules/
 
 # Environment secrets — NEVER commit these
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 
 # Keep the template so teammates know what vars are needed
 # .env.example  ← intentionally NOT ignored
