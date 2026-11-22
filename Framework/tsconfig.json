@@ -12,12 +12,13 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "paths": {
-      "@api/*": ["./src/api/*"],
-      "@config/*": ["./src/config/*"],
+      "@ai/*":       ["./src/ai/*"],
+      "@api/*":      ["./src/api/*"],
+      "@config/*":   ["./src/config/*"],
       "@fixtures/*": ["./src/fixtures/*"],
-      "@pages/*": ["./src/pages/*"],
+      "@pages/*":    ["./src/pages/*"],
       "@testdata/*": ["./src/testdata/*"],
-      "@utils/*": ["./src/utils/*"]
+      "@utils/*":    ["./src/utils/*"]
     }
   },
   "include": ["src/**/*.ts", "playwright.config.ts"]

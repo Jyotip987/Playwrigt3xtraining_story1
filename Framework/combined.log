@@ -7,3 +7,468 @@ function createFormatWrap(opts) {
 function createFormatWrap(opts) {
     return new Format(opts);
   } [undefined] [LoginPage] info: loginAs standard_user 2026-10-30 22:38:07
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: POST /booking for Helper Creator (price 640) 2026-11-14 22:32:26
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: server responded with status 405 2026-11-14 22:32:27
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: POST /booking for Helper Creator (price 640) 2026-11-14 22:36:23
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: server responded with status 405 2026-11-14 22:36:24
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: POST /booking for Helper Creator (price 640) 2026-11-14 22:37:11
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: server responded with status 405 2026-11-14 22:37:13
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: POST /booking for Helper Creator (price 640) 2026-11-14 22:38:02
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: server responded with status 200 2026-11-14 22:38:03
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 2: verifying booking id 3540 echoes the payload 2026-11-14 22:38:03
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 2: booking 3540 verified OK 2026-11-14 22:38:03
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: POST /booking for Helper Creator (price 640) 2026-11-14 22:42:09
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 1: server responded with status 200 2026-11-14 22:42:09
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 2: verifying booking id 731 echoes the payload 2026-11-14 22:42:09
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [create-booking] info: Step 2: booking 731 verified OK 2026-11-14 22:42:09
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-19 23:09:51
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-19 23:09:51
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs locked_out_user 2026-11-19 23:09:52
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs locked_out_user 2026-11-19 23:09:52
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-19 23:21:41
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-19 23:21:41
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs locked_out_user 2026-11-19 23:21:46
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs locked_out_user 2026-11-19 23:21:47
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-19 23:23:01
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-19 23:23:01
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-19 23:23:03
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 07:53:48
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 07:53:48
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 07:53:50
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:05:05
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:05:05
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:05:06
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:05:55
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:05:55
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:05:56
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:06:56
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:06:56
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:06:57
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:08:52
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:08:52
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:08:53
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:15:44
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:15:44
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:15:45
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:28:47
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:28:47
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:28:52
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:29:20
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:29:20
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:29:25
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:31:32
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:31:32
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:31:38
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:32:45
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:32:45
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:32:49
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:33:44
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:33:44
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:33:49
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:34:44
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:34:44
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:34:49
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:37:25
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:37:25
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:37:26
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:38:56
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:38:56
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:38:57
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:39:46
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:39:46
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:39:47
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:40:15
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:40:15
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:40:16
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:40:27
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:40:28
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:40:29
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:41:32
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:41:32
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:41:33
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:42:07
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:42:07
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:42:11
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:43:07
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:43:07
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:43:12
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-20 08:44:05
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-20 08:44:05
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-20 08:44:10
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 17:40:48
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 17:40:48
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 17:40:50
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 17:41:13
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 17:41:13
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 17:41:14
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 17:41:49
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 17:41:49
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs locked_out_user 2026-11-21 17:41:50
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs locked_out_user 2026-11-21 17:41:51
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:16:53
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:16:53
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:16:55
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Jermey Bode [78502] 2026-11-21 22:16:56
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:18:10
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:18:10
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:18:14
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Sydney Johnson [22161] 2026-11-21 22:18:21
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:31:05
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:31:05
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:31:09
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Vidal Kessler [27321] 2026-11-21 22:31:11
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:33:29
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:33:29
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:33:31
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Brock Lemke [37394-4757] 2026-11-21 22:33:32
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:35:35
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:35:35
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:35:37
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Graham Gleichner [45181-7902] 2026-11-21 22:35:38
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:43:23
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:43:23
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:43:24
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Damian Rolfson [35795] 2026-11-21 22:43:26
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:47:15
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:47:15
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:47:16
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Paxton Johnston [51450] 2026-11-21 22:47:18
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:49:14
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:49:14
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:49:20
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:49:43
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:49:43
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:50:57
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:50:57
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:51:17
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:51:17
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:51:18
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Johathan Hane [14684] 2026-11-21 22:51:20
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:51:46
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:51:46
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:51:50
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Brad Koch [90567-9692] 2026-11-21 22:51:54
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:55:04
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:55:04
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:55:05
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Oma Carter [78969] 2026-11-21 22:55:06
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 22:58:53
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 22:58:53
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 22:58:54
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Ellsworth Flatley [97463] 2026-11-21 22:58:55
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 23:01:59
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 23:01:59
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 23:02:00
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-21 23:02:34
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-21 23:02:34
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 23:02:35

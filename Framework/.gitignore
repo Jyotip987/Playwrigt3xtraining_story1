@@ -6,3 +6,14 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+/allure-results
+/combined.log
+/env/
+
+# Environment secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+
+# Keep the template so teammates know what vars are needed
+# .env.example  ← intentionally NOT ignored

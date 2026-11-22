@@ -1,0 +1,270 @@
+## Line-by-Line Explanation of `visualSteps.ts`
+
+---
+
+### 🔹 Line 1 — Imports
+
+```ts
+import { test, type Page, type TestInfo } from '@playwright/test';
+```
+
+| Import | Why |
+|--------|-----|
+| `test` | To call `test.step()` and `test.info()` inside the function |
+| `Page` | Type for the browser page — needed to take screenshots |
+| `TestInfo` | Type for the test's metadata object — used as the WeakMap key |
+
+---
+
+### 🔹 Line 2 — Environment Variable Flag
+
+```ts
+const ATTACH_SCREENSHOTS = process.env.ATTACH_SCREENSHOTS?.toLowerCase() === 'true';
+```
+
+**What it does:**  
+Reads an environment variable `ATTACH_SCREENSHOTS`. If you set it to `"true"` before running tests, screenshots get attached. Otherwise, skipped.
+
+```
+ATTACH_SCREENSHOTS=true  → true  → screenshots ARE attached
+ATTACH_SCREENSHOTS=false → false → screenshots are SKIPPED
+not set at all           → false → screenshots are SKIPPED
+```
+
+**Why `?.toLowerCase()`?**  
+Protects against `undefined` (if the env var is not set at all) — the `?.` means "only call `.toLowerCase()` if it's not undefined".
+
+```ts
+// Without ?.  → crash if undefined
+process.env.ATTACH_SCREENSHOTS.toLowerCase() // 💥 TypeError
+
+// With ?.     → safely returns undefined, which !== 'true' → false
+process.env.ATTACH_SCREENSHOTS?.toLowerCase() // ✅ safe
+```
+
+---
+
+### 🔹 Line 3 — The WeakMap Counter
+
+```ts
+const stepCounters = new WeakMap<TestInfo, number>();
+```
+
+**What is a WeakMap?**  
+A `Map` that uses objects as keys and auto-deletes entries when the object is garbage collected.
+
+```
+WeakMap<TestInfo, number>
+         ↑           ↑
+      KEY: the    VALUE: step
+      TestInfo    counter (0,1,2...)
+      object
+```
+
+**Why not a plain `number` variable?**  
+Because tests run in **parallel**. If you used a single `let counter = 0`, two tests running at the same time would share and corrupt the same counter.
+
+```ts
+// ❌ WRONG — shared across all tests
+let counter = 0;
+
+// ✅ CORRECT — each TestInfo is unique per test
+const stepCounters = new WeakMap<TestInfo, number>();
+```
+
+Each test gets its own `TestInfo` object → its own counter starting from `0`.
+
+**Why WeakMap and not Map?**  
+When a test finishes, its `TestInfo` object gets garbage collected → WeakMap automatically removes the entry too. No memory leak. Plain `Map` would hold the reference forever.
+
+---
+
+### 🔹 Line 4 — The `slugify()` Helper
+
+```ts
+function slugify(title: string): string {
+    return title
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '');
+}
+```
+
+**What it does:** Converts a human-readable step title into a safe filename string.
+
+```
+"Open the Cart!"   →   "open-the-cart"
+"Login as Admin"   →   "login-as-admin"
+"Step 1: Verify"   →   "step-1-verify"
+```
+
+**Why each line:**
+
+```ts
+.toLowerCase()              // "Open Cart" → "open cart"
+.replace(/[^a-z0-9]+/g, '-') // replace spaces/special chars → "open-cart"
+.replace(/(^-|-$)/g, '')    // remove leading/trailing dashes → "open-cart"
+```
+
+**Why do we need this?**  
+The attachment name `step-0-open-the-cart` is used by `CustomReporter.ts` to match the screenshot to the correct step. Special characters in the name would break that matching.
+
+---
+
+### 🔹 Line 5 — The Main Function Signature
+
+```ts
+export async function visualStep(
+    page: Page,           // the browser page (to take screenshot)
+    title: string,        // step name shown in report
+    body: () => Promise<void>,  // the actual test actions to run
+): Promise<void> {
+```
+
+**`body: () => Promise<void>`** — This is a **callback function**. The caller passes their test actions as a function:
+
+```ts
+await visualStep(page, 'Open the cart', async () => {
+//                                      ↑ this is the "body"
+    await cartPage.open();   // ← these run when body() is called
+});
+```
+
+---
+
+### 🔹 Line 6 — `test.step()` Wrapper
+
+```ts
+await test.step(title, async () => {
+```
+
+**Why wrap in `test.step()`?**  
+Two reasons:
+1. It shows the step name in Playwright's HTML reporter and TTA custom reporter
+2. Allure v3 listens to `test.step()` and **automatically** creates a step block in the Allure report
+
+```
+test.step('Open the cart', ...)
+     ↓ fires events to ALL reporters
+     ├── TTA CustomReporter → onStepBegin/onStepEnd
+     └── Allure Reporter    → onStepBegin/onStepEnd
+```
+
+---
+
+### 🔹 Line 7 — Run the Test Actions
+
+```ts
+await body();
+```
+
+This **executes the caller's test code** — whatever they passed in the callback.
+
+```ts
+// body is this function:
+async () => {
+    await cartPage.open();
+}
+
+// body() runs it:
+await cartPage.open();  ← this happens here
+```
+
+**Why run `body()` BEFORE taking the screenshot?**  
+So the screenshot captures the **final state after the action** completes — not before.
+
+---
+
+### 🔹 Line 8 — Get Current Test's Info & Counter
+
+```ts
+const info = test.info();
+const index = stepCounters.get(info) ?? 0;
+stepCounters.set(info, index + 1);
+```
+
+**Step by step:**
+
+```ts
+const info = test.info();
+// Gets the TestInfo object for the CURRENTLY RUNNING test
+// Each test has its own unique TestInfo
+```
+
+```ts
+const index = stepCounters.get(info) ?? 0;
+// Look up this test's current step count in the WeakMap
+// ?? 0 → if no entry exists yet (first step), default to 0
+//
+// Test A: first step  → get(infoA) = undefined → 0
+// Test A: second step → get(infoA) = 1         → 1
+// Test A: third step  → get(infoA) = 2         → 2
+```
+
+```ts
+stepCounters.set(info, index + 1);
+// Save the incremented counter back for next step
+//
+// After step 0: set(infoA, 1)
+// After step 1: set(infoA, 2)
+// After step 2: set(infoA, 3)
+```
+
+---
+
+### 🔹 Line 9 — Take and Attach Screenshot
+
+```ts
+if (ATTACH_SCREENSHOTS) {
+    const screenshot = await page.screenshot();
+
+    await info.attach(`step-${index}-${slugify(title)}`, {
+        body: screenshot,
+        contentType: 'image/png',
+    });
+}
+```
+
+**`page.screenshot()`** — Captures the current browser state as a PNG buffer.
+
+**`info.attach(name, { body, contentType })`** — Attaches the PNG to the test report.
+
+**The name `step-${index}-${slugify(title)}`** is the contract:
+
+```
+step-0-open-the-cart
+step-1-verify-item-count
+step-2-proceed-to-checkout
+  ↑        ↑
+index   slugified title
+
+CustomReporter.ts looks for "step-N-" prefix to pin screenshot to the right step
+Allure v3 uses anything attached inside test.step() and shows it under that step
+```
+
+---
+
+### 🔹 Complete Flow Visualized
+
+```
+visualStep(page, 'Open the cart', async () => { await cartPage.open() })
+│
+├─ test.step('Open the cart', async () => {
+│      │
+│      ├─ await body()           → runs: await cartPage.open()
+│      │
+│      ├─ info = test.info()     → gets this test's TestInfo
+│      ├─ index = get(info) ?? 0 → 0  (first step)
+│      ├─ set(info, 1)           → save counter=1 for next step
+│      │
+│      └─ if(ATTACH_SCREENSHOTS)
+│             screenshot = page.screenshot()  → 📸 PNG buffer
+│             info.attach('step-0-open-the-cart', png)
+│                          ↑
+│                  TTA Reporter: matches "step-0-" → pins to step 0
+│                  Allure v3:    inside test.step() → appears under this step
+│  })
+│
+├──► TTA Reporter sees: onStepBegin / onStepEnd
+└──► Allure Reporter sees: onStepBegin / onStepEnd
+```

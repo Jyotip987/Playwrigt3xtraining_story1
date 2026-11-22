@@ -3,7 +3,7 @@ import { BasePage } from './BasePage';
 
 export class InventoryPage extends BasePage {
     
-    static readonly PATH = '/playwright/ttacart/inventory-item.html';
+    static readonly PATH = '/playwright/ttacart/inventory.html';
     private readonly title: Locator;
     private readonly sortDropdown: Locator;
     private readonly items: Locator;
@@ -26,7 +26,7 @@ export class InventoryPage extends BasePage {
         await this.assertLoaded();
     }
     async assertLoaded(): Promise<void> {
-        await expect(this.title).toHaveText('Products');
+        await expect(this.title).toHaveText("Products");
         await expect.poll(async () => this.items.count()).toBeGreaterThan(3);
     }
         async productNames(): Promise<string[]> {
