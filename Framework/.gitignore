@@ -8,7 +8,7 @@ node_modules/
 /playwright/.auth/
 /allure-results
 /combined.log
-
+tta-report/
 
 # Environment secrets — NEVER commit these
 .env

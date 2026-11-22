@@ -472,3 +472,15 @@ function createFormatWrap(opts) {
 function createFormatWrap(opts) {
     return new Format(opts);
   } [undefined] [LoginPage] info: loginAs standard_user 2026-11-21 23:02:35
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: Step 1: logging in as standard_user 2026-11-22 13:05:21
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: Open login page 2026-11-22 13:05:21
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [LoginPage] info: loginAs standard_user 2026-11-22 13:05:23
+function createFormatWrap(opts) {
+    return new Format(opts);
+  } [undefined] [e2e-checkout] info: AI customer: Shanny Vandervort-Cole [57643-4360] 2026-11-22 13:05:24

@@ -1,0 +1,6 @@
+{
+  "runId": "20261122_130517",
+  "tests": {
+    "chromium › aiTests\\e2e-checkout-dataGenAI.spec.ts › @P0 @Regression E2E @Checkout Checkout Feature › should complete checkout successfully": "passed"
+  }
+}
